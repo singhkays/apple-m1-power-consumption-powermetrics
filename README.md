@@ -1,7 +1,7 @@
 # Apple Silicon M1 Power Consumption Deep Dive Series
 This repository is the source code written by me to parse the powermetrics logs and generate charts used in the following blog https://singhkays.com/blog/apple-silicon-m1-video-power-consumption-pt-1/
 
-# Repostiory structure
+# Repository structure
 Here are the various files and folders and their purposes 
 1. `powermetrics-parse.py` - This is the main code that is used to parse logs and generate charts
 2. `autorun-local-videos.py` - This is an experimental file that I was trying to use to completely automate logging and playing local videos. I didn't use this for the blog as it needs more testing and fine-tuning.
