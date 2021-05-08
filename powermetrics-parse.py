@@ -55,7 +55,7 @@ def regexParse(content, videoType):
 
 def buildVLCCharts(dfPower, dfFrequency, dfUsage, config, kLogo):
 
-    fig = px.area(dfPower.loc[dfPower["Video Type"].isin(["4K-VP9-TEST", "4K-AV1", "FHD-AV1", "FHD-H264", "FHD-VP9"])], x='time', y=['Package'], template='plotly_dark', 
+    fig = px.area(dfPower.loc[dfPower["Video Type"].isin(["4K-VP9", "4K-AV1", "FHD-AV1", "FHD-H264", "FHD-VP9"])], x='time', y=['Package'], template='plotly_dark', 
     width = 700, height = 350, facet_col='Video Type', line_shape= "spline", facet_col_wrap = 5,
     labels={"value": "Power Consumption (mW)", "time": "Time (s)"}, color_discrete_map={"Package": "#57FFBC"},
     category_orders={"Video Type": ["4K-VP9", "4K-AV1", "FHD-AV1", "FHD-H264", "FHD-VP9"]})
